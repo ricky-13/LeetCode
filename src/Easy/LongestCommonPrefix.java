@@ -2,7 +2,7 @@ package Easy;
 
 public class LongestCommonPrefix {
     public static String longestCommonPrefix(String[] strs) {
-        int minLength = 2000000000;
+        int minLength = 1999999999;
         StringBuilder str = new StringBuilder();
         if(strs.length == 1){
             return strs[0];
@@ -20,11 +20,11 @@ public class LongestCommonPrefix {
             }
             str.append(strs[0].charAt(i));
         }
-    return "";
+        return String.valueOf(str);
     }
 
     public static void main(String[] args) {
-        String[] arr = new String[]{"ab", "a"};
+        String[] arr = new String[]{"flower", "flo"};
         String s = longestCommonPrefix(arr);
         System.out.println(s);
     }
