@@ -43,5 +43,25 @@ public class WinningPoint {
         System.out.println(maxLength);
         System.out.println(startIndex);
 
+        int x = Integer.MAX_VALUE;
+        System.out.println(x);
+
+        String b = new String("String");
+
+        String a = "String";
+
+        System.out.println(a == b);
+
+//        Object[] o = {}
+
+        int[] a1 = {1,2,3};
+        int[] b1 = {4,6,78,8,9};
+
+        a1 = b1;
+        System.out.println(a1);
+        System.out.println(b1);
+
+
+
     }
 }
