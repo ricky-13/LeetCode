@@ -1,14 +1,18 @@
 package PPS;
 
 public class Connectors {
-    private String brand = "shaurya";
-    long l = 123;
+    public static String stringConn(String[] arr){
+        for(int i = 0; i < arr.length - 1; i++){
+            if(arr[i].charAt(arr[i].length() - 1) != arr[i+1].charAt(0)){
+                return "NOPE";
+            }
+        }
+        return "CORRECT";
+    }
 
     public static void main(String[] args) {
-        Connectors c = new Connectors();
-        System.out.println(c.brand);
-        String s = "Shaurya";
-        String s1 = "Shaurya";
-//        System.out.println(s.s1);
+
+        String[] arr = {"shaurya", "ahujan", "nabhinav", "victoria"};
+        System.out.println(stringConn(arr));
     }
 }
