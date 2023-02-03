@@ -17,7 +17,9 @@ public class LongestPalindrome {
         }
 
 //        for(int i = 0; i < )
+        for(String str : s){
 
+        }
         System.out.println(hm);
 
     }
