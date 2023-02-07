@@ -28,3 +28,6 @@ public class MysteryElement {
         missingElement(arr);
     }
 }
+
+//
+//n(n+1)/2
