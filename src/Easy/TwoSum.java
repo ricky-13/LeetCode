@@ -25,7 +25,7 @@ public class TwoSum {
     public static void main(String[] args) {
 //        int[] arr = new int[]{}
 
-        int[] arr = twoSum(new int[]{2,3,4}, 6);
+        int[] arr = twoSum(new int[]{4,2,3}, 6);
 
         for(int i : arr){
             System.out.println(i);
