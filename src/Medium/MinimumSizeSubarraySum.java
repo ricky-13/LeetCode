@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class MinimumSizeSubarraySum {
     public static int minSubArrayLen(int target, int[] nums) {
 
+        for (int i = 0; i < nums.length; i++) {
+
+        }
     }
 
 
