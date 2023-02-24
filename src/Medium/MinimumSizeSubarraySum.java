@@ -5,18 +5,24 @@ import java.util.Arrays;
 public class MinimumSizeSubarraySum {
     public static int minSubArrayLen(int target, int[] nums) {
 
-        int min = 0;
+        int min = Integer.MAX_VALUE;
         int currentSum = 0;
         int j = 0;
+        int currentLength = 0;
         
         for (int i = 0; i < nums.length; i++) {
             currentSum = currentSum + nums[i];
-            min++;
+            currentLength++;
             while(currentSum > target){
                 j++;
-                min = currentSum;
+                currentSum = currentSum - nums[j];
+                currentLength -= 1;
+                if(currentSum >= target){
+                    min = currentLength < min ? currentLength : min;
+                }
             }
         }
+        return min;
     }
 
 
