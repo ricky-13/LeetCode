@@ -7,10 +7,14 @@ public class MinimumSizeSubarraySum {
 
         int min = 0;
         int currentSum = 0;
+        int j = 0;
         
         for (int i = 0; i < nums.length; i++) {
+            currentSum = currentSum + nums[i];
+            min++;
             while(currentSum > target){
-
+                j++;
+                min = currentSum;
             }
         }
     }
