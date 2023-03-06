@@ -3,26 +3,28 @@ package Medium;
 import java.util.Arrays;
 
 public class MinimumSizeSubarraySum {
-    public static int minSubArrayLen(int target, int[] nums) {
+    public static void minSubArrayLen(int target, int[] nums) {
 
         int min = Integer.MAX_VALUE;
         int currentSum = 0;
         int j = 0;
         int currentLength = 0;
+        int i;
         
-        for (int i = 0; i < nums.length; i++) {
+        for ( i = 0; i < nums.length; i++) {
             currentSum = currentSum + nums[i];
             currentLength++;
+            System.out.println(currentLength + "   " + currentSum);
             while(currentSum > target){
                 j++;
                 currentSum = currentSum - nums[j];
                 currentLength -= 1;
-                if(currentSum >= target){
+                if(currentSum > target){
                     min = currentLength < min ? currentLength : min;
                 }
             }
         }
-        return min;
+        System.out.println(min + "    " + i + "    " + j + "   ");
     }
 
 
@@ -32,7 +34,7 @@ public class MinimumSizeSubarraySum {
 //                arr) {
 //            System.out.println(i);
 //        }
-        System.out.println(minSubArrayLen(7, arr));
+        minSubArrayLen(7, arr);
 
     }
 }
