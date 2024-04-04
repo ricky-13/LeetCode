@@ -11,6 +11,9 @@ public class LongestPalindrome {
 //        only needs a constant space
         for(int i = 0; i < s.length(); i++){
 //            System.out.println(s.charAt(i));
+//            int x = s.charAt(i);
+//            System.out.println(x);
+//            System.out.println(Integer(s.charAt(i)));
             charMap[s.charAt(i)]++;
         }
 
@@ -66,7 +69,7 @@ public class LongestPalindrome {
     }
 
     public static void main(String[] args){
-        String s = "aaaad";
+        String s = "aad";
 //        System.out.println(longestPalindrome(s));
         longestPalindrome(s);
     }
