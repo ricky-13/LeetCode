@@ -20,7 +20,7 @@ public class IsPalindrome {
         return true;
     }
     public static void main(String[] args) {
-        int x = 0;
+        int x = 00;
         System.out.println(isPalindrome(x));
     }
 }
