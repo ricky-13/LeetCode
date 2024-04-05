@@ -8,7 +8,9 @@ public class IsPalindrome {
         }
         char l = s.charAt(0);
         char r = s.charAt(s.length() - 1);
-        for(int i = 0; i <= s.length()/2; i++){
+
+
+        for(int i = 0; i < s.length()/2; i++){
             if(l != r) {
                 return false;
             } else {
@@ -20,7 +22,7 @@ public class IsPalindrome {
         return true;
     }
     public static void main(String[] args) {
-        int x = 00;
+        int x = 01;
         System.out.println(isPalindrome(x));
     }
 }

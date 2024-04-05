@@ -17,13 +17,13 @@ public class PalindromeLinkedList {
 //        s = s + "aaa";
 
         ListNode current = head;
-        while( current.next != null ){
+        while( current != null ){
             String dummy = String.valueOf(current.val);
             s = s + dummy;
             current = current.next;
         }
 
-        s = s + String.valueOf(current.val);
+//        s = s + String.valueOf(current.val);
 
         System.out.println(s);
 
@@ -32,7 +32,7 @@ public class PalindromeLinkedList {
         }
         char l = s.charAt(0);
         char r = s.charAt(s.length() - 1);
-        for(int i = 0; i <= s.length()/2; i++){
+        for(int i = 0; i < s.length()/2; i++){
             if(l != r) {
                 return false;
             } else {
@@ -45,7 +45,7 @@ public class PalindromeLinkedList {
     }
 
     public static void main(String[] args) {
-        int[] inputArray = {0,0};
+        int[] inputArray = {0, 1};
 
         ListNode head = new ListNode(inputArray[0]);
         ListNode current = head;
